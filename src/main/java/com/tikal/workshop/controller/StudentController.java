@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
+/**
+ * Student REST controller
+ */
 @RestController
 @RequestMapping(value = "/student", produces = "application/json")
 public class StudentController {
