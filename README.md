@@ -14,3 +14,5 @@ Starting in this branch you are requested to:
 4. Change the default profile of the Spring-boot application from command line in 2 ways:
 * Change the profile
 * Use external properties file
+5. Change the application server from tomcat to Jetty
+6. Why is the application log so thin?
