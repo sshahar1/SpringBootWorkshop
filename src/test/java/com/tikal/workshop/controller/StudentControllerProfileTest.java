@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -19,10 +20,12 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+// TODO: Your test must pass
 @RunWith(SpringRunner.class)
 @WebMvcTest
+@ActiveProfiles("bla")
 @ContextConfiguration(classes = WorkshopApplication.class)
-public class StudentControllerTest {
+public class StudentControllerProfileTest {
 
     @Autowired
     private MockMvc mockMvc;
@@ -33,7 +36,7 @@ public class StudentControllerTest {
     @Test
     public void testPost() throws Exception {
 
-        when(studentService.save(new Student("sigal"))).thenReturn(123L);
+        when(studentService.save(new Student("bla"))).thenReturn(123L);
         mockMvc.perform(post("/student/")
                 .contentType(APPLICATION_JSON)
                 .content("{}"))
