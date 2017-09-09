@@ -18,3 +18,8 @@ Starting in this branch you are requested to:
 5. Change the application server from tomcat to Jetty
 * How come we didn't need to set tomcat before?
 * Why is the application log so thin?
+
+# Phase 3
+1. Change the application server from tomcat to Jetty
+* How come we didn't need to set tomcat before?
+* Why is the application log so thin?
