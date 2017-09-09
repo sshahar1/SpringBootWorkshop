@@ -16,4 +16,4 @@ Starting in this branch you are requested to:
 * Change the profile
 * Use external properties file
 5. Change the application server from tomcat to Jetty
-6. Why is the application log so thin?
+* Why is the application log so thin?
