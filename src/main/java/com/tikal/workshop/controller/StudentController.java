@@ -1,7 +1,10 @@
 package com.tikal.workshop.controller;
 
 import com.tikal.workshop.json.StudentJson;
+import com.tikal.workshop.service.AsyncService;
 import com.tikal.workshop.service.StudentService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -25,20 +28,22 @@ public class StudentController {
     @Value("${name}")
     private String defaultName;
 
+    private final StudentService studentService;
+
+    private final AsyncService asyncService;
+
+    private Logger logger = LoggerFactory.getLogger(StudentController.class);
+
     @Autowired
-    private StudentService studentService;
+    public StudentController(AsyncService asyncService, StudentService studentService) {
+        this.asyncService = asyncService;
+        this.studentService = studentService;
+    }
 
     @PostConstruct
     private void postConstruct() {
-        runCounter();
-    }
-
-    @Async
-    private void runCounter() {
-        int counter=0;
-        while (true) {
-            counter++;
-        }
+        asyncService.runCounter();
+        logger.info("after async");
     }
 
     @RequestMapping(method = POST)
