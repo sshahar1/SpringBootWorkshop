@@ -9,6 +9,7 @@ Starting in this branch you are requested to:
 # Phase 2
 Starting in this branch you are requested to:
 1. Change the running port to 9090
+2. Change the default name via command line
 2. Create a profile with a different default name
 3. Pass all the unit tests provided
 4. Change the default profile of the Spring-boot application from command line in 2 ways:
