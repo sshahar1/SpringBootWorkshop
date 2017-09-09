@@ -17,6 +17,9 @@ Starting in this branch you are requested to:
 * Use external properties file
 
 # Phase 3
+1. An asynchronous post construct method was added to the controller, run the application again
 1. Change the application server from tomcat to Jetty
 * How come we didn't need to set tomcat before?
 * Why is the application log so thin?
+2. Run the application with debug
+3. Add the actuator to your application
