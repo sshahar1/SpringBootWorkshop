@@ -24,3 +24,6 @@ Starting in this branch you are requested to:
 3. Run the application with debug
 4. Add the actuator to your application
 5. Add the server host name to the actuator health check
+
+# Final
+Congratulations on finishing all exercises. If time is left add a database service to your controller
