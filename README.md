@@ -23,3 +23,4 @@ Starting in this branch you are requested to:
 * Why is the application log so thin?
 3. Run the application with debug
 4. Add the actuator to your application
+5. Add the server host name to the actuator health check
