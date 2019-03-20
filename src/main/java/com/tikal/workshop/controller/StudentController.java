@@ -22,8 +22,12 @@ public class StudentController {
     @Value("${name}")
     private String defaultName;
 
+    private final StudentService studentService;
+
     @Autowired
-    private StudentService studentService;
+    public StudentController(StudentService studentService) {
+        this.studentService = studentService;
+    }
 
     @RequestMapping(method = POST)
     public ResponseEntity<Long> add(@RequestBody StudentJson json) {
