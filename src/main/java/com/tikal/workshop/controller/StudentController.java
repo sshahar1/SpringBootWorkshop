@@ -18,8 +18,12 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 @RequestMapping(value = "/student", produces = "application/json")
 public class StudentController {
 
+    private final StudentService studentService;
+
     @Autowired
-    private StudentService studentService;
+    public StudentController(StudentService studentService) {
+        this.studentService = studentService;
+    }
 
     @RequestMapping(method = POST)
     public ResponseEntity<Long> add(@RequestBody StudentJson json) {
