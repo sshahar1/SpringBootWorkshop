@@ -3,3 +3,4 @@ springbootworkshop.iml
 .idea/
 target/
 _config.yml
+*.iml
