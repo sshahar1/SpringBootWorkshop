@@ -1,13 +1,21 @@
 package com.tikal.workshop.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Objects;
 
 /**
  * Created by sigals on 31/08/2017.
  */
+@Entity
 public class Student {
 
+    @Id
+    @GeneratedValue
     private Long id;
+    @Column
     private String name;
 
     public Student(String name) {

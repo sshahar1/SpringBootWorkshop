@@ -27,3 +27,12 @@ Starting in this branch you are requested to:
 
 # Final
 Congratulations on finishing all exercises. If time is left add a database service to your controller
+
+# Hibernate
+If you've reached so far you are invited to try the Hibernate part.
+
+1. Lets review how the table, repository, configuration and classpath were modified.
+2. The service should insert a student
+3. The service should find all students
+4. The service should find all students and sort it by name in descending order
+5. Find a list of students with their name starting with 'A'
