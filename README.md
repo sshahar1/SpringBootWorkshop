@@ -27,3 +27,6 @@ Starting in this branch you are requested to:
 
 # Final
 Congratulations on finishing all exercises. If time is left add a database service to your controller
+
+# Hibernate
+If you've reached so far you are invited to try the Hibernate part by checking out the 'hibernate' branch.
