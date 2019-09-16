@@ -36,3 +36,7 @@ If you've reached so far you are invited to try the Hibernate part.
 3. The service should find all students
 4. The service should find all students and sort it by name in descending order
 5. Find a list of students with their name starting with 'A'
+
+To help you create repository methods please see this [link](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.core-concepts)
+
+Now, let us take suggestions from the audience
